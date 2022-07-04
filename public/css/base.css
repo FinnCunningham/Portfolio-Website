@@ -102,6 +102,10 @@ p{
   border-left: 2px solid #FD2155;
   box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
   margin-bottom: 5px;
+  cursor: pointer;
+}
+.portfolio-item:hover h2 {
+  color: #04AA6D;
 }
 
 .portfolio-item h2{
@@ -131,6 +135,45 @@ footer{
   background: radial-gradient(pink, transparent);
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .header-title{
     font-size: 2em;
@@ -140,5 +183,29 @@ footer{
   }
   .header-about{
     font-size: 1em;
+  }
+  .portfolio-item{
+    width: 36%;
+    height: 47vw;
+  }
+
+  .portfolio-item h2{
+    font-size: 1.2em;
+  }
+  .portfolio-item p{
+    font-size: 0.9em;
+  }
+  .portfolio-item span{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1250px){
+  .portfolio-items{
+    padding: 0;
+  }
+
+  .portfolio-item{
+    padding: 2rem 1.5rem 1.5rem;
   }
 }
